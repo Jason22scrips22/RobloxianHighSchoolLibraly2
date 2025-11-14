@@ -1,0 +1,12 @@
+local player = game.Players.LocalPlayer
+local character = player.Character
+if character then
+    local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+    if humanoidRootPart then
+        humanoidRootPart.CFrame = CFrame.new(142.72287, 7.49802446, -336.504333, 0.0450517274, 4.56411655e-08, -0.998984635, 6.6259453e-08, 1, 4.8675691e-08, 0.998984635, -6.83850985e-08, 0.0450517274)
+    else
+        print("HumanoidRootPart não encontrado")
+    end
+else
+    print("Personagem não encontrado")
+end
